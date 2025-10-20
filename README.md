@@ -58,7 +58,7 @@ If you want to learn more about building native executables, please consult <htt
 You can create a native image using:
 
 ```sh
-./mvnw install -Dnative -Dquarkus.native.container-build=true -Dquarkus.native.container-runtime=podman -DskipTests
+./mvnw clean install -Dnative -DskipTests -Dquarkus.native.container-build=true -Dquarkus.native.container-runtime=podman -Dquarkus.podman.platform=linux/amd64
 ```
 
 Build the Docker image using:
